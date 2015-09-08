@@ -12,18 +12,18 @@ public class NoCash implements ATMState {
 	}
 
 	public void insertCard() {		
-		System.out.println("ATM is out of money. Your card cannot be inserted");		
+		System.out.println("Brak srodkow w bankomacie, nie mozna wlozyc karty");		
 	}
 
 	public void ejectCard() {
-		System.out.println("ATM is out of money. Cannot eject card");
+		System.out.println("Brak srodkow w bankomacie, nie wysunieto karty");
 	}
 
 	public void requestCash(int cashToWithdraw) {
-		System.out.println("ATM is out of money. Cannot withdraw cash");
+		System.out.println("Brak srodkow w bankomacie, nie mozna wyplacic");
 	}
 
 	public void insertPin(int pinEntered) {
-		System.out.println("ATM is out of money. Cannot enter pin");
+		System.out.println("Brak srodkow w bankomacie, nie mozna wpisac pinu");
 	}	
 }

@@ -15,13 +15,13 @@ public class HasPin implements ATMState {
 
 	public void insertCard() {
 		
-		System.out.println("You can only insert one card at a time. Card not inserted");
+		System.out.println("Mozesz umiescic tylko jedna karte naraz. Nie wlozono nowej karty");
 		
 	}
 
 	public void ejectCard() {
 		
-		System.out.println("Your card is ejected");
+		System.out.println("Wysuwam karte");
 		atmMachine.setATMState(atmMachine.getNoCardState());
 		
 	}
@@ -30,15 +30,15 @@ public class HasPin implements ATMState {
 		
 		if(cashToWithdraw > atmMachine.cashInMachine){
 			
-			System.out.println("You don't have that much cash available. Ejecting card");
+			System.out.println("Brak srodkow w bankomacie. Wysuwam karte");
 			atmMachine.setATMState(atmMachine.getNoCardState());
 			
 		} else {
 			
-			System.out.println(cashToWithdraw + " is provided by the machine");
+			System.out.println("Wyplacam " + cashToWithdraw);
 			atmMachine.setCashInMachine(atmMachine.cashInMachine - cashToWithdraw);
 			
-			System.out.println("Your card is ejected");
+			System.out.println("Wysuwam karte");
 			atmMachine.setATMState(atmMachine.getNoCardState());
 			
 			if(atmMachine.cashInMachine <= 0){ 
@@ -51,7 +51,7 @@ public class HasPin implements ATMState {
 
 	public void insertPin(int pinEntered) {
 		
-		System.out.println("You already entered a PIN");
+		System.out.println("Wpisano juz pin");
 		
 	}	
 }

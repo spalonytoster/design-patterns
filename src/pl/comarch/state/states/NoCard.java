@@ -15,26 +15,26 @@ public class NoCard implements ATMState {
 
 	public void insertCard() {
 		
-		System.out.println("Card inserted");
+		System.out.println("Wlozono karte");
 		atmMachine.setATMState(atmMachine.getYesCardState());
 		
 	}
 
 	public void ejectCard() {
 		
-		System.out.println("Cannot eject: You didn't enter a card");
+		System.out.println("Nie mozna wysunac karty - zadnej nie wlozono");
 		
 	}
 
 	public void requestCash(int cashToWithdraw) {
 		
-		System.out.println("Cannot withdraw: You have not entered your card");
+		System.out.println("Nie mozna wyplacic - nie wlozono karty");
 		
 	}
 
 	public void insertPin(int pinEntered) {
 		
-		System.out.println("Cannot insert pin: You have not entered your card");
+		System.out.println("Nie mozna wpisac pinu - nie wlozono karty");
 		
 	}
 }
