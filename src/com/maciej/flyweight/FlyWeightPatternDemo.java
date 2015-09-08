@@ -56,7 +56,7 @@ public class FlyWeightPatternDemo {
 //			Circle circle = (Circle)ShapeFactory.getCircle(getRandomColor());
 //
 //		}
-		
+
 		long endTime = System.currentTimeMillis();
 		System.out.println("\nI've drawn " + circlesToDraw +
 						   " circles in " + (endTime-startTime) + " milliseconds.");

@@ -1,0 +1,30 @@
+Creational:
+
+1. Singleton			PD
+2. Prototyp				PD
+3. Builder				PD
+4. Abstract Factory		PD
+
+Structural:
+
+5. Facade				MP
+6. Adapter				PG
+7. Decorator			PD
+8. Bridge				MP
+9. Composite			MP
+10. Flyweight			MP
+11. Proxy				?
+
+Behavioral:
+
+12. Observer			PG
+13. State				PD
+14. Strategy			PD
+14.5 Template			PG
+15. Chain of Resp		MP
+16. Memento				PG
+17. Iterator			MP
+18. Mediator			PG
+19. Command				PD
+20. Interpreter			MP
+21. Visitor				PG
