@@ -15,7 +15,7 @@ public class HasCard implements ATMState {
 
 	public void insertCard() {
 		
-		System.out.println("You can only insert one card at a time. Card not inserted");
+		System.out.println("Mozesz umiescic tylko jedna karte naraz. Nie wlozono nowej karty");
 		
 	}
 
@@ -28,7 +28,7 @@ public class HasCard implements ATMState {
 
 	public void requestCash(int cashToWithdraw) {
 		
-		System.out.println("You have not entered your PIN. Cannot withdraw cash");
+		System.out.println("Dopiero wylozono karte. Nie mozna wyplacic srodkow");
 		
 		
 	}
@@ -37,12 +37,12 @@ public class HasCard implements ATMState {
 		
 		if(pinEntered == 1234){
 			
-			System.out.println("You entered the correct PIN");
+			System.out.println("Wpisales poprawny pin");
 			atmMachine.setATMState(atmMachine.getHasPinState());
 			
 		} else {
 			
-			System.out.println("You entered the wrong PIN. Ejecting card");
+			System.out.println("Wpisales niepoprawny pin, wysuwam karte");
 			atmMachine.setATMState(atmMachine.getNoCardState());
 			
 		}	
